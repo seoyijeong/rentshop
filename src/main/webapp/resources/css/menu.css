@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin : 0;
+    padding: 0;
+}
+
+a { text-decoration: none;  }
+
+ul { list-style-type: none; } 
+
+.container h3 {
+	text-align: center;
+	padding: 10px;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu .subject {
+	padding: 15px;
+	background-color: lightgrey;
+}
+
+.menu ul {
+	justify-content: center;
+    display: flex;
+}
+
+.menu ul > li {
+    display:flex;
+    align-items: center;
+}
+
+.menu ul > li > a {
+    margin: auto;
+    padding: 10px;
+    font-size:20px;
+    align-items: center;
+}
+
+.home h3 {
+	text-align: center;
+}
+
+.container table a {
+	text-decoration: none;
+}
+
+.container table tr:hover {
+	background-color: lightgrey;
+}
+
+.footer {
+	margin-top: 20px;
+	text-align: center;
+	padding: 10px;
+	background-color: lightgrey;
+}

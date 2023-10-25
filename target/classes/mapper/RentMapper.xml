@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fastcampus.shop.mapper.RentMapper">
+
+	<select id="rentList" resultType = "rentDTO">
+		SELECT * FROM rent_tbl
+	</select>
+	
+	<select id="rentMoney" resultType="rentMoneyDTO">
+		SELECT m.cust_no, m.cust_name, m.grade, sum(r.rent_price) as total_price
+		FROM member_tbl m, rent_tbl r
+		WHERE m.cust_no = r.cust_no
+		GROUP BY m.cust_no
+	</select>
+</mapper>
